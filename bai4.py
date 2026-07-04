@@ -52,7 +52,7 @@ async def global_unhandled_exception_handler(request: Request, exc: Exception):
             "data": None,
             "error": "Internal Server Error",
             "message": "Hệ thống đang gặp sự cố gián đoạn. Vui lòng thử lại sau.",
-            "timestamp": datetime.time().isoformat(), 
+            "timestamp": datetime.now().isoformat(), 
             "path": request.url.path
         }
     )
